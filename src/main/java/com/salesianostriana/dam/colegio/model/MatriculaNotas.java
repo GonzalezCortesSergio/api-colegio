@@ -14,12 +14,6 @@ public class MatriculaNotas {
     @EmbeddedId
     private MatriculaNotasPK notasPK = new MatriculaNotasPK();
 
-    public MatriculaNotas(Alumno a, Asignatura as){
-
-        this.alumno = a;
-        this.asignatura = as;
-    }
-
     @ManyToOne
     @MapsId("alumno_id")
     @JoinColumn(name = "alumno_id")
@@ -30,7 +24,6 @@ public class MatriculaNotas {
     @JoinColumn(name = "asignatura_id")
     private Asignatura asignatura;
 
-    @MapsId("anio")
     private Long anio;
 
     private double nota;

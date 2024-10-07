@@ -15,5 +15,4 @@ public class MatriculaNotasPK implements Serializable {
 
     private Long alumno_id;
     private Long asignatura_id;
-    private Long anio;
 }
